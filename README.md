@@ -8,4 +8,4 @@
 
 ### Build Project
 1. Run `npm run build` or `yarn build`
-2. Static contents will be generated in `build' folder
+2. Static contents will be generated in `build` folder
