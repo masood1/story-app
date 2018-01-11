@@ -1,0 +1,10 @@
+.ui.menu .item.branding {
+  font-size: 2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.4em;
+  padding-left: 0;
+}
+
+.ui.inverted.menu a.item.branding:hover{
+  background: rgba(0,0,0,.03)
+}
