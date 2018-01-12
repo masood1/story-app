@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import ImageSearchGallery from "../image-search-gallery";
 
 
 class Home extends Component {
@@ -9,6 +10,7 @@ class Home extends Component {
     return (
       <section style={{height: '500px'}}>
 
+      <ImageSearchGallery />
 
       </section>
     )
