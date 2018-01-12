@@ -1,13 +1,11 @@
-languaage: node_js
+language: node_js
 node_js:
-  -"8"
-script:
-  - "echo started to build ... "
-
-install:
+  - 6
+cache:
+  directories:
+  - node_modules
+before_install:
   - npm install -g firebase-tools
 after_success:
   - npm run build
-  - firebase deploy --public ./build --token $FIREBASE_TOKEN
-  
-    
+  - firebase deploy -m "Travis deploy" --non-interactive --token $FIREBASE_TOKEN
