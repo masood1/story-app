@@ -17,9 +17,9 @@ const initialState = {
           case 'FETCH_IMAGE_FULFILLED' : {
               return {
                   ...state,
-          fetching: false,
-          fetched: true,
-                  data: action.payload.results
+                fetching: false,
+                fetched: true,
+                  data: [...state.data, ...action.payload.results]
               }
           }
           case 'FETCH_IMAGE_REJECTED' : {
