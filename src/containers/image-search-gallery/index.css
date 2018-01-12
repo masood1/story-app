@@ -1,3 +1,9 @@
 .ui.card .image, .ui.cards .card .image .search-image-gallery{
     height:105px;
 }
+
+.ui.grid .row .column .search-image-gallery-scroll{
+    max-height:300px;
+    overflow: auto;
+    padding:20px;
+}
