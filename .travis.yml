@@ -2,7 +2,7 @@ languaage: node_js
 node_js:
   -"8"
 script:
-  - "echo deploying"
+  - "echo started build""
 install:
   - npm install -g firebase-tools
 after_success:
