@@ -6,6 +6,10 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 
 
 class Home extends Component {
+  state = {
+    userImageUrl : '',
+    userName : ''
+  }
 
   render() {
 
@@ -13,10 +17,11 @@ class Home extends Component {
       console.log(response);
 
       let userImageUrl = 'https://graph.facebook.com/'+response.id+'/picture?width=9999'
-      localStorage.setItem('userImageUrl',userImageUrl);
-      localStorage.setItem('name',response.name);
-      localStorage.setItem('email',response.email);
-      console.log(userImageUrl)
+
+      this.setState({
+        userImageUrl:userImageUrl,
+        userName:response.name
+      })
     }
 
     const extra = (
@@ -43,8 +48,8 @@ class Home extends Component {
 <Image src={localStorage.getItem('userImageUrl')} size='large' />
 
 <Card
-    image={localStorage.getItem('userImageUrl')}
-    header={localStorage.getItem('name')}
+    image={this.state.userImageUrl}
+    header={this.state.name}
     meta='Friend'
     description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
     extra={extra}
