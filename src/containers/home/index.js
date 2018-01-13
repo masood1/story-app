@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import ImageSearchGallery from "../image-search-gallery";
 import FacebookLogin from 'react-facebook-login';
-import { Card, Icon } from 'semantic-ui-react'
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 
 class Home extends Component {
@@ -14,6 +14,8 @@ class Home extends Component {
 
       let userImageUrl = 'https://graph.facebook.com/'+response.id+'/picture?width=9999'
       localStorage.setItem('userImageUrl',userImageUrl);
+      localStorage.setItem('name',response.name);
+      localStorage.setItem('email',response.email);
       console.log(userImageUrl)
     }
 
@@ -38,9 +40,11 @@ class Home extends Component {
       fields="name,email,picture"
       callback={responseFacebook} />
 
+<Image src={localStorage.getItem('userImageUrl')} size='large' />
+
 <Card
     image={localStorage.getItem('userImageUrl')}
-    header='Elliot Baker'
+    header={localStorage.getItem('name')}
     meta='Friend'
     description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
     extra={extra}
