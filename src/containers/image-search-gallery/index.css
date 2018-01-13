@@ -1,4 +1,4 @@
-.ui.card .image, .ui.cards .card .image .search-image-gallery{
+.ui.cards .card.search-image-gallery > .image{
     height:105px;
 }
 
