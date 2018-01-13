@@ -17,10 +17,11 @@ class Home extends Component {
       console.log(response);
 
       let userImageUrl = 'https://graph.facebook.com/'+response.id+'/picture?width=9999'
+      let userName = response.name
 
       this.setState({
         userImageUrl:userImageUrl,
-        userName:response.name
+        userName:userName
       })
     }
 
