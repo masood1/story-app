@@ -37,3 +37,58 @@ h5,
 button, input, optgroup, select, textarea {
   font-family: 'Signika', sans-serif;
 }
+
+
+#stapp-root .ui-menu {
+  box-shadow: none;
+  border: none;
+}
+
+.clapButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #EC644B;
+  color: #EC644B;
+  font-size: 2em;
+  box-shadow: none !important;
+}
+
+.clapButton:hover {
+  -webkit-animation: pulse-shadow--collection 2s infinite;
+  animation: pulse-shadow--collection 2s infinite;
+}
+
+@-webkit-keyframes pulse-shadow--collection {
+  0% {
+      -webkit-box-shadow: 0 0;
+      box-shadow: 0 0
+  }
+
+  70% {
+      -webkit-box-shadow: 0 0 5px 10px rgba(255,255,255,0);
+      box-shadow: 0 0 5px 10px rgba(255,255,255,0)
+  }
+
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+      box-shadow: 0 0 0 0 rgba(255,255,255,0)
+  }
+}
+
+@keyframes pulse-shadow--collection {
+  0% {
+      -webkit-box-shadow: 0 0;
+      box-shadow: 0 0
+  }
+
+  70% {
+      -webkit-box-shadow: 0 0 5px 10px rgba(255,255,255,0);
+      box-shadow: 0 0 5px 10px rgba(255,255,255,0)
+  }
+
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+      box-shadow: 0 0 0 0 rgba(255,255,255,0)
+  }
+}

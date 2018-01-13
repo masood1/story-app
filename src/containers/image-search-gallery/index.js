@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
-import { Grid,Image,Search,Form,Card,Button} from 'semantic-ui-react'
+import { Grid,Form,Card,Button} from 'semantic-ui-react'
 import { searchImage} from './../../actions/imageSearchActions'
 
 import './index.css'
@@ -14,7 +14,7 @@ class ImageSearchGallery extends Component{
     }
 
     changeSearchText = function(searchText){
-        this.setState({ 
+        this.setState({
             searchInput: searchText,
             page: 1
         })
@@ -23,7 +23,7 @@ class ImageSearchGallery extends Component{
     searchImage = function(){
        this.props.searchImage(this.state.searchInput, this.state.page)
        this.setState({ page: this.state.page + 1 })
-    } 
+    }
 
     render(){
         let {searchImageResult} = this.props
@@ -37,7 +37,7 @@ class ImageSearchGallery extends Component{
                                 <input placeholder='Search ...' onChange={ (e) => this.changeSearchText(e.target.value) } onBlur={ this.searchImage.bind(this) }/>
                             </Form.Field>
                             </Form>
-                         
+
                          </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>
@@ -46,26 +46,26 @@ class ImageSearchGallery extends Component{
                     {
                         searchImageResult.data.map((result) =>
                             <Card className="search-image-gallery" key={result.id} raised image={result.urls.small}/> )
-                    } 
+                    }
 
                     {
                         (searchImageResult.data.length > 0)
                         ? <Button fluid onClick={ this.searchImage.bind(this) } loading={searchImageResult.fetching} >Load more</Button>
                         : ''
                     }
-                             
+
                     </Card.Group>
-                    </Grid.Column>              
+                    </Grid.Column>
                     </Grid.Row>
                 </Grid>
             </Fragment>
-        )        
+        )
     }
 }
 const mapStateToProps = state => ({
     searchImageResult: state.searchImageReducer
 })
-  
+
   export default connect(
     mapStateToProps,
     { searchImage }

@@ -1,0 +1,45 @@
+.create-story {
+  min-height: 550px;
+}
+
+.medium-editor-element.title-input,
+.medium-editor-element.story-content {
+  padding: 0.5em 2.2em;
+  outline: none;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  font-family: 'Maitree', serif;
+}
+
+.medium-editor-element.title-input {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3.2em;
+  letter-spacing: -1px;
+  padding: 0.5em 1em;
+}
+
+.medium-editor-element.title-input:focus {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.create-story .medium-editor-placeholder:after {
+  font-style: normal;
+  color: #CBC8C2;
+}
+
+.create-story .medium-editor-placeholder.title-input:after {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.medium-editor-element.title-input > p {
+  line-height: 1em;
+}
+
+.title-border {
+  width: 25%;
+  height: 6px;
+  margin-top: -1em;
+  background: #EC644B;
+  margin-left: 3.4em;
+}
