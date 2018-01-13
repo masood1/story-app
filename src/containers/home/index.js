@@ -5,10 +5,6 @@ import ImageSearchGallery from "../image-search-gallery";
 import FacebookLogin from 'react-facebook-login';
 import { Card, Icon, Image } from 'semantic-ui-react'
 
-import {
-  Icon,
-} from 'semantic-ui-react'
-
 
 class Home extends Component {
   state = {
