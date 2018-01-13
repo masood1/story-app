@@ -3,8 +3,10 @@
   padding-top: 0.2em;
   padding-bottom: 0.4em;
   padding-left: 0;
+  font-family: 'Bitter', serif;
 }
 
-.ui.inverted.menu a.item.branding:hover{
-  background: rgba(0,0,0,.03)
+.ui.menu a.item.branding:hover{
+  background: transparent;
+  border-left: none;
 }

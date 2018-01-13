@@ -12,6 +12,7 @@ import Footer from "../../components/footer";
 //Containers
 import Home from '../home'
 import About from '../about'
+import CreateStory from "../create-story";
 
 const App = () => (
   <Fragment>
@@ -19,6 +20,7 @@ const App = () => (
     <Container as="main">
       <Route exact path="/" component={Home} />
       <Route exact path="/about-us" component={About} />
+      <Route exact path="/create-story" component={CreateStory} />
     </Container>
     <Footer />
   </Fragment>
