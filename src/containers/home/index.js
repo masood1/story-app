@@ -48,7 +48,7 @@ class Home extends Component {
 
 <Card
     image={this.state.userImageUrl}
-    header={this.state.name}
+    header={this.state.userName}
     meta='Friend'
     description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
     extra={extra}
