@@ -45,8 +45,6 @@ class Home extends Component {
       fields="name,email,picture"
       callback={responseFacebook} />
 
-<Image src={localStorage.getItem('userImageUrl')} size='large' />
-
 <Card
     image={this.state.userImageUrl}
     header={this.state.name}
