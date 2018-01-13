@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/our-story/story-app.svg?branch=master)](https://travis-ci.org/our-story/story-app)
 # Our Story App
 
 ### Run Project
