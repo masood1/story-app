@@ -22,7 +22,7 @@ const App = () => (
       <Route exact path="/about-us" component={About} />
       <Route exact path="/create-story" component={CreateStory} />
     </Container>
-    <Footer />
+    
   </Fragment>
 )
 
