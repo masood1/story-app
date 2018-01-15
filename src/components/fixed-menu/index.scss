@@ -1,0 +1,23 @@
+.ui.menu {
+  .item.branding {
+    font-size: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+    padding-left: 0;
+    font-family: 'Bitter', serif;
+  }
+
+  a.item.branding:hover{
+    background: transparent;
+    border-left: none;
+  }
+
+  .item.sign-in {
+    cursor: pointer;
+    font-weight: 300;
+
+    &:hover {
+      color: #EC644B;
+    }
+  }
+}
