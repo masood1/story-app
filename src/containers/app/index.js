@@ -7,7 +7,7 @@ import {
 
 // Components
 import FixedMenu from "../../components/fixed-menu";
-import Footer from "../../components/footer";
+//import Footer from "../../components/footer";
 
 //Containers
 import Home from '../home'
@@ -22,7 +22,7 @@ const App = () => (
       <Route exact path="/about-us" component={About} />
       <Route exact path="/create-story" component={CreateStory} />
     </Container>
-    
+
   </Fragment>
 )
 

@@ -10,3 +10,12 @@
   background: transparent;
   border-left: none;
 }
+
+.ui.menu .item.sign-in {
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.ui.item .item.sign-in:hover {
+  color: #EC644B;
+}

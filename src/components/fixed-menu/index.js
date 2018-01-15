@@ -14,6 +14,7 @@ const FixedMenu = () => (
       <Menu.Item header href='/' className="branding">Story App</Menu.Item>
       <Menu.Menu position='right'>
         <Menu.Item as='a' href='/create-story'><Icon name='add' /> New Story</Menu.Item>
+        <Menu.Item as='span' className="sign-in">Sign In</Menu.Item>
       </Menu.Menu>
     </Container>
   </Menu>

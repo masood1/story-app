@@ -42,7 +42,7 @@ class ImageSearchGallery extends Component{
                     </Grid.Row>
                     <Grid.Row>
                     <Grid.Column width={10}>
-                    <Card.Group fluid stackable itemsPerRow={5} className ="search-image-gallery-scroll">
+                    <Card.Group stackable itemsPerRow={5} className ="search-image-gallery-scroll">
                     {
                         searchImageResult.data.map((result) =>
                             <Card className="search-image-gallery" key={result.id} raised image={result.urls.small}/> )

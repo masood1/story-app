@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 import ImageSearchGallery from "../image-search-gallery";
 import FacebookLogin from 'react-facebook-login';
-import { Card, Icon, Image,Modal,Button,Header } from 'semantic-ui-react'
+import { Card, Icon, Modal, Button, Header } from 'semantic-ui-react'
 import './index.css'
 
 
@@ -53,7 +53,7 @@ class Home extends Component {
         appId="2004005372949932"
         autoLoad={true}
         fields="name,email,picture"
-        callback={responseFacebook} 
+        callback={responseFacebook}
         />
 
       </Modal>

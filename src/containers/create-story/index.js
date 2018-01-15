@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 
 import Editor from 'react-medium-editor';
 import {
-  Input,
   Grid
 } from 'semantic-ui-react'
 
