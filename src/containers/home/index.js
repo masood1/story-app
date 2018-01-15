@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 
 import ImageSearchGallery from "../image-search-gallery";
 import FacebookLogin from 'react-facebook-login';
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Icon, Image,Modal,Button,Header } from 'semantic-ui-react'
+import './index.css'
 
 
 class Home extends Component {
@@ -36,15 +37,31 @@ class Home extends Component {
     return (
       <section style={{height: '500px'}}>
 
-        <ImageSearchGallery />
-
-        <Icon name='add' circular className="clapButton" size="large" />
+      <Modal
+        trigger={<Button onClick={this.handleOpen}>Sign in</Button>}
+        open={this.state.modalOpen}
+        onClose={this.handleClose}
+        basic
+        size='small'
+      >
+        <Header icon='browser' content='Cookies policy' />
+        <Modal.Content>
+          <h3>Please login with</h3>
+        </Modal.Content>
 
         <FacebookLogin
         appId="2004005372949932"
         autoLoad={true}
         fields="name,email,picture"
-        callback={responseFacebook} />
+        callback={responseFacebook} 
+        />
+
+      </Modal>
+
+
+        <ImageSearchGallery />
+
+        <Icon name='add' circular className="clapButton" size="large" />
 
         <Card
             image={this.state.userImageUrl}
