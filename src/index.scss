@@ -1,7 +1,12 @@
+$font-signika: 'Signika', sans-serif;
+$font-bitter: 'Bitter', serif;
+
+$color-red: #EC644B;
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Signika', sans-serif;
+  font-family: $font-signika;
 }
 
 main {
@@ -25,7 +30,7 @@ h5,
 .ui.search>.results .result .title,
 .ui.search>.results>.message .header,
 .ui.category.search>.results .category>.name {
-  font-family: 'Bitter', serif;
+  font-family: $font-bitter;
 }
 
 .ui.button,
@@ -35,7 +40,7 @@ h5,
 .ui.menu, .ui.statistic>.value,.ui.statistics .statistic>.value,
 .ui.accordion .title:not(.ui),
 button, input, optgroup, select, textarea {
-  font-family: 'Signika', sans-serif;
+  font-family: $font-signika;
 }
 
 
@@ -48,15 +53,15 @@ button, input, optgroup, select, textarea {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid #EC644B;
-  color: #EC644B;
+  border: 1px solid $color-red;
+  color: $color-red;
   font-size: 2em;
   box-shadow: none !important;
-}
 
-.clapButton:hover {
-  -webkit-animation: pulse-shadow--collection 2s infinite;
-  animation: pulse-shadow--collection 2s infinite;
+  &:hover {
+    -webkit-animation: pulse-shadow--collection 2s infinite;
+    animation: pulse-shadow--collection 2s infinite;
+  }
 }
 
 @-webkit-keyframes pulse-shadow--collection {

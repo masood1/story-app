@@ -1,0 +1,53 @@
+.create-story {
+  min-height: 550px;
+
+  .medium-editor-element {
+    &.title-input,
+    &.story-content {
+      padding: 0.5em 2.2em;
+      outline: none;
+      font-size: 1.5em;
+      margin-top: 0.5em;
+      font-family: 'Maitree', serif;
+    }
+
+    &.title-input {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 3.2em;
+      letter-spacing: -1px;
+      padding: 0.5em 1em;
+
+      &:focus {
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      > p {
+        line-height: 1em;
+      }
+    }
+
+    &.story-content {
+      margin-top: 1em;
+    }
+  }
+
+  .medium-editor-placeholder {
+
+    &:after {
+      font-style: normal;
+      color: #CBC8C2;
+    }
+
+    &.title-input:after {
+      font-size: 1em;
+      margin-top: 0;
+    }
+  }
+
+  .title-border {
+    width: 25%;
+    height: 6px;
+    background: #EC644B;
+    margin-left: 3.4em;
+  }
+}
