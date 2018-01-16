@@ -1,0 +1,58 @@
+.ui.menu {
+  a.item.branding {
+    font-size: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+    padding-left: 0;
+    font-family: 'Bitter', serif;
+
+    &:hover{
+      background: transparent;
+      border-left: none;
+    }
+  }
+
+  .item.sign-in {
+    cursor: pointer;
+    font-weight: 300;
+
+    &:hover {
+      color: #EC644B;
+    }
+  }
+}
+
+.login-popup {
+  .content {
+    text-align: center;
+
+    h2{
+      margin-bottom: 1em;
+    }
+
+    p {
+      margin-bottom: 3em;
+    }
+
+    .social-login-buttons {
+      width: 70%;
+      margin: 0 auto;
+
+      .ui.button {
+        display: block;
+        width: 100%;
+        margin-bottom: 1em;
+      }
+
+      .svgIcon-use {
+        vertical-align: middle;
+        margin-right: 0.5em;
+
+        &.fb-icon {
+          fill: #2E66AB;
+        }
+      }
+    }
+
+  }
+}

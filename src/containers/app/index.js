@@ -6,17 +6,17 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import FixedMenu from "../../components/fixed-menu";
 //import Footer from "../../components/footer";
 
 //Containers
+import AppHeader from "../header";
 import Home from '../home'
 import About from '../about'
 import CreateStory from "../create-story";
 
 const App = () => (
   <Fragment>
-    <FixedMenu />
+    <AppHeader />
     <Container as="main">
       <Route exact path="/" component={Home} />
       <Route exact path="/about-us" component={About} />
